@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<title>Pizza Order Form</title>
+<head><h1>Pizza Guys Order Form</h1></head>
+	<meta charset="utf-8">
+	<meta name="author" content="Ronak Patel">
+	<body>
+		<img src="pizza.png" style="width:250px;height:250px">
+		<form>
+		Name<br>
+		<input type="text" placeholder="your name" required /><br>
+		
+		Address: #### Street Name ...<br>
+		<input type="text" placeholder="delivery address" required /><br>
+		
+		Phone Number: 123-123-1234<br>
+		<input type="tel" placeholder="123-123-1234" pattern="\d{3}-?\d{3}-?\d{4}"><br>
+		
+		<u>Pizza size</u><br>
+		<input type="radio" name="size" value="Large" required>Large  
+		<input type="radio" name="size" value="Medium">Medium 
+		<input type="radio" name="size" value="Small">Small<br><br>
+		
+		<u>Pizza Toppings</u><br>
+		<input type="checkbox" name="Toppings" value="Sausage">Sausage
+		<input type="checkbox" name="Toppings" value="Pepperoni">Pepperoni
+		<input type="checkbox" name="Toppings" value="Olives">Olives
+		<input type="checkbox" name="Toppings" value="Anchovies">Anchovies
+		<input type="checkbox" name="Toppings" value="Onions">Onions <br><br>
+		
+		<button type="submit" value="Place Order" onclick="print()">Place Order</button>
+		<button type="reset" value="Clear">Clear</button>
+		</form>
+		
+		<script>
+		function print(){
+			alert('Order Placed');
+		}
+		</script>
+	</body>
+</html>
